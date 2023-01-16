@@ -1,1 +1,22 @@
-Hello World
+<html>
+<head>
+  <script>
+    function generateURL() {
+      // Get the value from the input box
+      var inputValue = document.getElementById("inputBox").value;
+
+      // Use the input value to generate the URL
+      var generatedURL = "https://example.com/" + inputValue;
+
+      // Display the generated URL in the output text box
+      document.getElementById("outputBox").innerHTML = generatedURL;
+    }
+  </script>
+</head>
+<body>
+  <input type="text" id="inputBox">
+  <button onclick="generateURL()">Generate URL</button>
+  <br>
+  <textarea id="outputBox"></textarea>
+</body>
+</html>
